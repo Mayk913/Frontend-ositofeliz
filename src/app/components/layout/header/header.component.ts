@@ -32,11 +32,11 @@ export class HeaderComponent implements OnInit {
         // ]
       },
       {
-        label: 'Comprar',
+        label: 'Productos',
         icon: 'pi pi-fw pi-qrcode',
       },
       {
-        label: 'Productos',
+        label: 'Comprar',
         icon: 'pi pi-fw pi-shopping-bag',
       },
       {

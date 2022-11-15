@@ -9,13 +9,21 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 
 import {MenubarModule} from 'primeng/menubar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MostrarClienteComponent } from './components/cliente/mostrar-cliente/mostrar-cliente.component';
+import { CrearClienteComponent } from './components/cliente/crear-cliente/crear-cliente.component';
+import { ActualizarClienteComponent } from './components/cliente/actualizar-cliente/actualizar-cliente.component';
+import { EliminarClienteComponent } from './components/cliente/eliminar-cliente/eliminar-cliente.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    MostrarClienteComponent,
+    CrearClienteComponent,
+    ActualizarClienteComponent,
+    EliminarClienteComponent
   ],
   imports: [
     BrowserModule,

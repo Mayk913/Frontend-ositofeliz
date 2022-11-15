@@ -19,6 +19,7 @@ import { EliminarProductoComponent } from './components/producto/eliminar-produc
 import { MostrarCompraComponent } from './components/comprar/mostrar-compra/mostrar-compra.component';
 import { CrearCompraComponent } from './components/comprar/crear-compra/crear-compra.component';
 import { ActualizarCompraComponent } from './components/comprar/actualizar-compra/actualizar-compra.component';
+import { EliminarCompraComponent } from './components/comprar/eliminar-compra/eliminar-compra.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { ActualizarCompraComponent } from './components/comprar/actualizar-compr
     MostrarCompraComponent,
     CrearCompraComponent,
     ActualizarCompraComponent,
+    EliminarCompraComponent,
 
    
   ],

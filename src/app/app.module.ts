@@ -12,7 +12,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MostrarClienteComponent } from './components/cliente/mostrar-cliente/mostrar-cliente.component';
 import { CrearClienteComponent } from './components/cliente/crear-cliente/crear-cliente.component';
 import { ActualizarClienteComponent } from './components/cliente/actualizar-cliente/actualizar-cliente.component';
-import { EliminarClienteComponent } from './components/cliente/eliminar-cliente/eliminar-cliente.component';
+import { MostrarProductoComponent } from './components/producto/mostrar-producto/mostrar-producto.component';
+import { CrearProductoComponent } from './components/producto/crear-producto/crear-producto.component';
+import { ActualizarProductoComponent } from './components/producto/actualizar-producto/actualizar-producto.component';
+import { EliminarProductoComponent } from './components/producto/eliminar-producto/eliminar-producto.component';
+import { MostrarCompraComponent } from './components/comprar/mostrar-compra/mostrar-compra.component';
+import { CrearCompraComponent } from './components/comprar/crear-compra/crear-compra.component';
+import { ActualizarCompraComponent } from './components/comprar/actualizar-compra/actualizar-compra.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +30,15 @@ import { EliminarClienteComponent } from './components/cliente/eliminar-cliente/
     MostrarClienteComponent,
     CrearClienteComponent,
     ActualizarClienteComponent,
-    EliminarClienteComponent
+    MostrarProductoComponent,
+    CrearProductoComponent,
+    ActualizarProductoComponent,
+    EliminarProductoComponent,
+    MostrarCompraComponent,
+    CrearCompraComponent,
+    ActualizarCompraComponent,
+
+   
   ],
   imports: [
     BrowserModule,

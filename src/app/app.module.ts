@@ -20,6 +20,10 @@ import { MostrarCompraComponent } from './components/comprar/mostrar-compra/most
 import { CrearCompraComponent } from './components/comprar/crear-compra/crear-compra.component';
 import { ActualizarCompraComponent } from './components/comprar/actualizar-compra/actualizar-compra.component';
 import { EliminarCompraComponent } from './components/comprar/eliminar-compra/eliminar-compra.component';
+import { MostrarDistribuirComponent } from './components/distribuir/mostrar-distribuir/mostrar-distribuir.component';
+import { CrearDistribuirComponent } from './components/distribuir/crear-distribuir/crear-distribuir.component';
+import { ActualizarDistribuirComponent } from './components/distribuir/actualizar-distribuir/actualizar-distribuir.component';
+import { EliminarDistribuirComponent } from './components/distribuir/eliminar-distribuir/eliminar-distribuir.component';
 
 
 @NgModule({
@@ -39,6 +43,10 @@ import { EliminarCompraComponent } from './components/comprar/eliminar-compra/el
     CrearCompraComponent,
     ActualizarCompraComponent,
     EliminarCompraComponent,
+    MostrarDistribuirComponent,
+    CrearDistribuirComponent,
+    ActualizarDistribuirComponent,
+    EliminarDistribuirComponent,
 
    
   ],

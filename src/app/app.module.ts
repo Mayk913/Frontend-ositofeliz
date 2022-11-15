@@ -7,6 +7,9 @@ import { HeaderComponent } from './components/layout/header/header.component';
 import { ContentComponent } from './components/layout/content/content.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 
+import {MenubarModule} from 'primeng/menubar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +19,9 @@ import { FooterComponent } from './components/layout/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

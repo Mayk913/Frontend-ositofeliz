@@ -32,7 +32,7 @@ export class HeaderComponent implements OnInit {
         // ]
       },
       {
-        label: 'Tipo Productos',
+        label: 'Comprar',
         icon: 'pi pi-fw pi-qrcode',
       },
       {
@@ -40,7 +40,11 @@ export class HeaderComponent implements OnInit {
         icon: 'pi pi-fw pi-shopping-bag',
       },
       {
-        label: 'Ventas',
+        label: 'Distribuir',
+        icon: 'pi pi-fw pi-shopping-cart',
+      },
+      {
+        label: 'Proveedores',
         icon: 'pi pi-fw pi-shopping-cart',
       }
 

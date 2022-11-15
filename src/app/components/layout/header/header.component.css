@@ -10,10 +10,10 @@
 
 }
 
-    #logo-header {
-        width: 200px;
-        height: 90px;
-    }
+#logo-header {
+    width: 200px;
+    height: 90px;
+}
 
 .titulo {
     flex-grow: 1;

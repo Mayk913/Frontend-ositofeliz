@@ -3,7 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ClienteService } from 'src/app/services/cliente.service';
 import { ClienteI } from 'src/app/models/cliente';
-
+import {Message,MessageService} from 'primeng/api';
 
 
 
@@ -20,15 +20,13 @@ export class CrearClienteComponent implements OnInit {
     apellidoCliente: ['', [Validators.required]],
     direccionCliente: ['', [Validators.required]],
     telefonoCliente: ['', [Validators.required]],
-    correoCliente: ['', [Validators.required]],
-   
 
   });
 
   constructor(
     private formBuilder: FormBuilder,
     private clienteService: ClienteService,
-
+    private messageService: MessageService,
 
     private router: Router,
   ) { }
@@ -44,7 +42,10 @@ export class CrearClienteComponent implements OnInit {
       () => {
         // console.log('Se ha creado correctamente');
 
+        setTimeout(()=>{                  
+          this.messageService.add({severity:'success', summary: 'Notificación', detail: 'Cliente Creado', life:5000});
 
+     }, 0);
         this.router.navigateByUrl('clientes');
 
       },
@@ -59,13 +60,12 @@ export class CrearClienteComponent implements OnInit {
   cancel() {
     this.router.navigateByUrl('/clientes');
   }
+
   get codigoCliente() { return this.form.get('codigoCliente'); }
   get nombreCliente() { return this.form.get('nombreCliente'); }
   get apellidoCliente() { return this.form.get('apellidoCliente'); }
   get direccionCliente() { return this.form.get('direccionCliente'); }
   get telefonoCliente() { return this.form.get('telefonoCliente'); }
-  get correoCliente() { return this.form.get('correoCliente'); }
-  
 
 
 }

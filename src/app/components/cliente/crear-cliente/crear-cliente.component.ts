@@ -15,7 +15,7 @@ import {Message,MessageService} from 'primeng/api';
 export class CrearClienteComponent implements OnInit {
 
   public form:FormGroup=this.formBuilder.group({
-    codigoCliente: ['', [Validators.required]],
+    codigoC: ['', [Validators.required]],
     nombreCliente: ['', [Validators.required]],
     apellidoCliente: ['', [Validators.required]],
     direccionCliente: ['', [Validators.required]],
@@ -61,7 +61,7 @@ export class CrearClienteComponent implements OnInit {
     this.router.navigateByUrl('/clientes');
   }
 
-  get codigoCliente() { return this.form.get('codigoCliente'); }
+  get codigoC() { return this.form.get('codigoC'); }
   get nombreCliente() { return this.form.get('nombreCliente'); }
   get apellidoCliente() { return this.form.get('apellidoCliente'); }
   get direccionCliente() { return this.form.get('direccionCliente'); }

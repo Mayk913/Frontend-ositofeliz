@@ -29,6 +29,9 @@ import { CrearProveedoresComponent } from './components/proveedores/crear-provee
 import { ActualizarProveedoresComponent } from './components/proveedores/actualizar-proveedores/actualizar-proveedores.component';
 import { EliminarProveedoresComponent } from './components/proveedores/eliminar-proveedores/eliminar-proveedores.component';
 
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -62,7 +65,9 @@ import { EliminarProveedoresComponent } from './components/proveedores/eliminar-
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MenubarModule
+    MenubarModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

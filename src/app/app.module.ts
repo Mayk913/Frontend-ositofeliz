@@ -29,10 +29,13 @@ import { CrearProveedoresComponent } from './components/proveedores/crear-provee
 import { ActualizarProveedoresComponent } from './components/proveedores/actualizar-proveedores/actualizar-proveedores.component';
 import { EliminarProveedoresComponent } from './components/proveedores/eliminar-proveedores/eliminar-proveedores.component';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {TableModule} from 'primeng/table';
 import {ButtonModule} from 'primeng/button';
+import {InputTextModule} from 'primeng/inputtext';
+import {ToastModule} from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 
 @NgModule({
@@ -69,11 +72,16 @@ import {ButtonModule} from 'primeng/button';
     BrowserAnimationsModule,
     MenubarModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     TableModule,
-    ButtonModule
+    ButtonModule,
+    InputTextModule,
+    ToastModule
   ],
-  providers: [],
+  providers: [
+    MessageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

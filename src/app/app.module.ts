@@ -24,6 +24,10 @@ import { MostrarDistribuirComponent } from './components/distribuir/mostrar-dist
 import { CrearDistribuirComponent } from './components/distribuir/crear-distribuir/crear-distribuir.component';
 import { ActualizarDistribuirComponent } from './components/distribuir/actualizar-distribuir/actualizar-distribuir.component';
 import { EliminarDistribuirComponent } from './components/distribuir/eliminar-distribuir/eliminar-distribuir.component';
+import { MostrarProveedoresComponent } from './components/proveedores/mostrar-proveedores/mostrar-proveedores.component';
+import { CrearProveedoresComponent } from './components/proveedores/crear-proveedores/crear-proveedores.component';
+import { ActualizarProveedoresComponent } from './components/proveedores/actualizar-proveedores/actualizar-proveedores.component';
+import { EliminarProveedoresComponent } from './components/proveedores/eliminar-proveedores/eliminar-proveedores.component';
 
 
 @NgModule({
@@ -47,6 +51,10 @@ import { EliminarDistribuirComponent } from './components/distribuir/eliminar-di
     CrearDistribuirComponent,
     ActualizarDistribuirComponent,
     EliminarDistribuirComponent,
+    MostrarProveedoresComponent,
+    CrearProveedoresComponent,
+    ActualizarProveedoresComponent,
+    EliminarProveedoresComponent,
 
    
   ],

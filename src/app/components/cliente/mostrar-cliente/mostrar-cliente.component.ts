@@ -10,7 +10,7 @@ import { ClienteService } from '../../../services/cliente.service'
 })
 export class MostrarClienteComponent implements OnInit {
   public clientes:ClienteI[] = []
-  public displayedColumns: string[] = ["id", "nombreCliente", "direccionCliente", "telefonoCliente", "correoCliente","Acciones"]
+  public displayedColumns: string[] = ["id", "codigo","nombreCliente", "apellidoCliente", "direccionCliente", "telefonoCliente", "Acciones"]
   constructor(
     private clienteService: ClienteService,
     private router: Router

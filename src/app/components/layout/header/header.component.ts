@@ -22,6 +22,7 @@ export class HeaderComponent implements OnInit {
       {
         label: 'Clientes',
         icon: 'pi pi-fw pi-users',
+        routerLink: '/clientes'
         // items: [
         //   {
         //     label: 'Crud Cliente'

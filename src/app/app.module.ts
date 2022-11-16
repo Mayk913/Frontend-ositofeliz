@@ -31,6 +31,8 @@ import { EliminarProveedoresComponent } from './components/proveedores/eliminar-
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {TableModule} from 'primeng/table';
+import {ButtonModule} from 'primeng/button';
 
 
 @NgModule({
@@ -67,7 +69,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MenubarModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    TableModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

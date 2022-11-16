@@ -14,9 +14,9 @@ export class ClienteService {
     private http:HttpClient
   ) { }
 
-  getAllCliente():Observable<{cliente:ClienteI[]}>{
+  getAllCliente():Observable<{clientes:ClienteI[]}>{
     return this.http
-      .get<{cliente:ClienteI[]}>(this.base_path)
+      .get<{clientes:ClienteI[]}>(this.base_path)
   }
 
   getOneCliente():Observable<{cliente:ClienteI[]}>{

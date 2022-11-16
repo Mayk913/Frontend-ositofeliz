@@ -1,3 +1,16 @@
+<div class="flex align-items-center justify-content-end bg-cyan-100">
+    <a 
+      pButton 
+      pRipple
+      label="Crear Clientes" 
+      icon="pi pi-user-plus"
+      class="bg-cyan-600"
+      [routerLink]="['/addclientes']">
+    </a>
+
+
+</div>
+
 <p-table [value]="clientes">
     <ng-template pTemplate="header">
         <tr>
